@@ -1,15 +1,45 @@
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>April Gum</title>
+    <title>April Gum - Cannabis-Infused Chewing Gum</title>
     <link rel='shortcut icon' type='image/x-icon' href='favicon.png'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="April Gum">
+    <meta property="og:description" content="Cannabis-infused chewing gum.">
+    <meta property="og:image" content="http://www.aprilgum.com/thumbnail.jpg">
+    <meta property="twitter:image" content="http://www.aprilgum.com/thumbnail.jpg">
+    <meta property="og:url" content="http://www.aprilgum.com">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Serif+Pro" rel="stylesheet">
 
     <style>
+    /*
+      A Sonnet About This Website Design
+      By Jenny Liu Zhang
+
+      To whom it may concern, page source viewer:
+      Pay attention to the responsiveness.
+      Media queries are a pain, for sure,
+      I spent many hours making them the best.
+      Admire the poppies as they resize,
+      Fluid design principles are at work.
+      At 10 in the morn I started the site,
+      Right now it's 1am and my eyes hurt.
+      Do you see every flower and that gif?
+      How it swaps images for smaller screens?
+      How about every line around each chiclet?
+      Do you notice all six shades of light green?
+      Mailchimp is a real pain in the poppy.
+      This design here is my pride, don't copy!
+
+      http://www.jennyzhang.me/
+      http://www.jenny.world/
+    */
+
       @font-face {
         font-family: 'Century Schoolbook';
         src: url('texgyreschola-regular.otf');
@@ -23,6 +53,11 @@
       @font-face {
         font-family: 'Graphik Medium';
         src: url('Graphik-Medium.otf');
+      }
+
+      @font-face {
+        font-family: 'Graphik Regular';
+        src: url('Graphik-Regular.otf');
       }
 
       *, body { margin: 0 }
@@ -52,7 +87,7 @@
         width: 100vw;
       }
 
-        .wrap { margin: auto; padding: 20px; }
+        .wrap { margin: auto; padding: 30px; }
 
       .head {
         position: relative;
@@ -111,11 +146,80 @@
         letter-spacing: 0.02em;
       }
 
-      #playlist {
+      #mc_embed_signup { background: #fff; }
+
+        #mc_embed_signup h2 {
+          margin: 30px 0;
+          font: normal 1.8em/1.5em 'Century Schoolbook Italic', serif;
+          color: #f9501e;
+          text-shadow: none;
+        }
+
+        #mce-responses, #mce-responses a {
+          margin: 10px 0;
+          font: normal 0.9em/1.2em 'Graphik Regular', sans-serif;
+          color: #295676;
+          text-align: center;
+        }
+
+        input#mce-EMAIL, input#mc-embedded-subscribe {
+          -webkit-appearance: none;
+          display: block;
+          margin: 0 auto 5px;
+          padding: 15px 20px;
+          width: 270px;
+          font: normal 1em/1.2em 'Graphik Regular', sans-serif;
+          border: #9bd8a5 2px solid;
+          border-radius: 8px;
+        }
+
+        input#mc-embedded-subscribe {
+          background: #9bd8a5;
+          color: #fff;
+          width: 314px;
+        }
+
+        #mc_embed_signup div.mce_inline_error {
+          display: none !important;
+        }
+
+      #postcard {
         position: relative;
-        display: block;
-        margin: 40px auto;
+        margin: 40px 0;
+        background: #fbf8ee;
+        border: 1px solid #f7eee2;
+        box-shadow: 20px 20px 30px rgba(0,0,0, 0.02);
       }
+
+        #greetings {
+          display: block;
+          margin: 40px auto 20px;
+          width: 80vw;
+          max-width: 240px;
+        }
+
+        #postcard h2 {
+          font-size: 0.9em;
+          color: #fd4f00;
+          text-shadow: none;
+        }
+
+        #decor { display: none; }
+
+        #playlist {
+          position: relative;
+          display: block;
+          margin: 40px auto;
+          width: 270px;
+        }
+
+        #footer {
+          margin: -200px 0 0 0;
+          width: 110%;
+          background: url('footer.png') center top no-repeat;
+          background-size: 150% auto;
+          height: 270px;
+        }
 
       @media screen and (min-width: 640px){
         .wrap { width: 60vw; max-width: 630px; }
@@ -137,6 +241,32 @@
 
         #chiclets1 { top: 65%; left: 15%; transform: translate(-15%,-65%); max-height: 400px; }
         #chiclets2 { top: 60%; right: 10%; transform: translate(0%,-60%); max-height: 300px; }
+
+        #mc_embed_signup {
+          margin-left: -20%;
+          width: 140%;
+          height: 340px;
+          background: url('form1.gif') center center no-repeat;
+          background-size: 100% auto;
+        }
+          input#mce-EMAIL { width: 340px; }
+          input#mc-embedded-subscribe { width: 384px; }
+
+        #postcard {
+          margin-left: -12%;
+          width: 125%;
+          max-width: 780px;
+          -moz-transform:rotate(-3deg);
+          -webkit-transform:rotate(-3deg);
+          -o-transform:rotate(-3deg);
+          -ms-transform:rotate(-3deg);
+          filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=-.03);
+        }
+          #greetings { max-width: 320px; }
+          #postcard h2 { font-size: 1.1em; }
+          #playlist { width: 340px; }
+
+        #footer { background-size: 100% auto; }
       }
 
       @media screen and (min-width: 800px){
@@ -154,6 +284,52 @@
 
         #chiclets1 { top: 75%; left: 15%; transform: translate(-15%,-75%); max-height: 540px; }
         #chiclets2 { top: 65%; left: 90%; transform: translate(-90%,-65%); max-height: 420px; }
+
+        #mc_embed_signup {
+          margin-left: -200px;
+          width: 900px;
+          height: 600px;
+          background: url('form2.gif') center center no-repeat;
+          background-size: 85% auto;
+        }
+
+          #mc_embed_signup_scroll {
+            padding: 150px 0 0 0;
+          }
+
+        #postcard {
+          margin: 40px 0 50px -12%;
+          min-height: 400px;
+        }
+        #postcard-left {
+          float: left;
+          margin: 10px 0 0 40px;
+        }
+          #greetings { width: 280px; }
+          #decor {
+            display: block;
+            position: absolute;
+            top: 175px;
+            left: -116px;
+            width: 560px;
+          }
+
+        #playlist {
+          float: right;
+          margin-right: 40px;
+          width: 200px;
+        }
+
+        #footer { margin: -300px 0 0 0; height: 400px; }
+      }
+
+      @media screen and (min-width: 860px){
+        #mc_embed_signup { margin-left: -150px; }
+        #playlist { width: 240px; }
+      }
+
+      @media screen and (min-width: 960px){
+        #playlist { width: 300px; }
       }
 
       @media screen and (min-width: 1280px){
@@ -163,11 +339,35 @@
 
         #chiclets1 { top: 90%; left: 33%; transform: translate(-33%,-90%); }
         #chiclets2 { top: 65%; left: 65%; transform: translate(-65%,-65%); }
+
+        #playlist { width: 340px; }
+
+        #footer { margin: -440px 0 0 0; height: 600px; }
       }
     </style>
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+          $("#tin").css("display", "none");
+          $("#tin").fadeIn(1000);
+          $(".chiclets").css("display", "none");
+          $(".chiclets").fadeIn(2000);
+          $(".poppy").css("display", "none");
+          $(".poppy").fadeIn(3000);
+
+          $(".poppy").css({"opacity":"0", "height":"10%"});
+          $(".poppy").animate({
+            opacity: '100%',
+            height: '100%',
+          }, {duration: 3000, queue: false});
+      });
+    </script>
 
   </head>
   <body>
@@ -187,14 +387,46 @@
       <img class="poppy" id="poppy8" src="poppy8.png" alt="">
       <img class="chiclets" id="chiclets1" src="chiclets1.png" alt="">
       <img class="chiclets" id="chiclets2" src="chiclets2.png" alt="">
-        <!-- <iframe id="playlist" src="https://open.spotify.com/embed?uri=spotify:user:1257176056:playlist:3tU6i5FPChoXOL3C15rjjP&theme=white" width="300" height="320" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
+
     </div>
 
     <div class="slide">
       <div class="wrap">
         <h1 id="headline">April Gum is cannabis-infused chewing gum.</h1>
-        <p>Between medicine and recreation, April Gum serves as lifestyle supplement. Enjoy a west coast state of mind with gum made from cannabis, herbs, and spices from the California coast. April Gum comes in tins of 50 chiclets, with 5mg THC per chiclet.</p>
+        <p>Made from cannabis, herbs, and spices from the west coast, April Gum comes in tins of 20 pieces, with 5mg THC per piece. Treat it like a lifestyle supplement, between medicine and recreation. Enjoy it before a plane ride, after a meal, before the gym, or on the go.</p>
+
+        <!-- Begin MailChimp Signup Form -->
+        <div id="mc_embed_signup">
+        <form action="https://jennyzhang.us12.list-manage.com/subscribe/post?u=c741ea090b78c61048be95723&amp;id=107593068a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <h2>Coming soon!<br>Keep in touch?</h2>
+              <div class="mc-field-group">
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your Email Address">
+              </div>
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div><!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c741ea090b78c61048be95723_107593068a" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Sign me up!" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </div>
+        </form>
+        </div>
+        <script type='text/javascript' src='http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+        <!--End mc_embed_signup -->
+
+        <div id="postcard">
+          <div id="postcard-left">
+            <img id="greetings" src="greetings.png" alt="">
+            <h2>A state of mind somewhere between<br>San Francisco and Santa Barbara.</h2>
+            <img id="decor" src="postcard.png" alt="">
+          </div>
+          <iframe id="playlist" src="https://open.spotify.com/embed?uri=spotify:user:1257176056:playlist:3tU6i5FPChoXOL3C15rjjP&theme=white" height="320" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+
       </div>
     </div>
+
+    <div id="footer"></div>
   </body>
 </html>
